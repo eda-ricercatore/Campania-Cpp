@@ -1,0 +1,289 @@
+/**
+ * Zhiyang Ong, student number 6004-9194-12,
+ * Assignment 5, Introduction to Programming Systems Design
+ * CSCI 455, Fall 2005
+ *
+ * @acknowledgement - code samples/examples from the web page
+ *	<http://www-scf.usc.edu/~csci455/>; they are written by
+ *	Dr. K. Narayanaswamy
+ */
+
+// Including header files
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <iomanip>
+#include <climits>
+#include <cfloat>
+#include <ctype.h>
+using namespace std;
+
+// Declaring constants...
+// Maximum number of students that can be placed in the table
+const int MAXIMUM_NUMBER_OF_STUDENTS=50;
+
+// Declaration of the struct data type to represent each student's particulars
+struct student {
+	/**
+	 * Assume that all names of students can be written using English alphabets
+	 * That is, no characters outside the English language may be used
+	 */
+	 
+	// Last name should only contain alphabetic characters
+	string last_name;
+	// First name should only contain alphabetic characters
+	string first_name;
+	/**
+	 * Digits in all places, except characters in position 4 and 7
+	 * - they should be dashes '-'
+	 * US security social numbers only.
+	 */
+	string social_security_number;
+	/**
+	 * US Phone numbers only...
+	 * 13 characters: '(', character 1; ')', character 5; '-', character 9;
+	 * remaining characters are digits
+	 */
+	string phone_number;
+	/**
+	 * Should be non-negative (a baby can be 0 years of age)
+	 * and less than 150 (nobody lives for more than 150 years)
+	 */
+	int age;
+}
+
+// Declaring function prototypes
+bool check_last_name(string lastname);
+bool check_first_name(string firstname);
+bool check_social_security_number(string ssn);
+bool check_phone_number(string phonenumber);
+bool check_age(int age);
+void read_input(string inputfilename, student );
+void uppercase (string & s);
+void write_output(string outputfilename, student student_particulars[]);
+
+
+// Main function...
+main() {
+	cout << "STUDENT DATABASE PROGRAM" << endl;
+	
+	// Names for input and output file streams
+	string inputfilename, outputfilename;
+	
+	// Prompt user for input
+	cout << "Please enter input filename, and press the return key" << endl;
+	cin >> inputfilename;
+	cout << endl;
+	cout << "Please enter output filename, and press the return key" << endl;
+	cin >> outputfilename;
+	cout << endl;
+	
+		
+	cout << '\t' << "Processing the input file: " << inputfilename << endl;
+	cout << endl;
+	
+	// Process the input file...
+	// Store the particulars of students in the table
+	student student_particulars[MAXIMUM_NUMBER_OF_STUDENTS];
+	// Initialize table values to NULL
+	for(int i=0; i<MAXIMUM_NUMBER_OF_STUDENTS; i++) {
+		student_particulars[i].last_name="";
+		student_particulars[i].first_name="";
+		student_particulars[i].social_security_number="";
+		student_particulars[i].phone_number="";
+		student_particulars[i].age=0;
+	}
+	// Read the input file
+    read_input(inputfilename, student_particulars);
+	
+	
+	// Processing of input file is completed...
+	cout << endl;
+	cout << '\t' << "All input is processed" << endl;
+
+	// Write to output file...
+	write_output(outputfilename, student_particulars);
+	cout << "Output is written to the file: " << outputfilename << endl;
+}
+
+
+/**
+ * Fuunction to read input from a file and process it
+ * #Read the particulars of each student in a line with the following format:
+ *	Last_name	First_name	Social_Security_Number	Telephone	Age
+ * Assume that the input file will contain data in this format
+ * @param inputfilename is the name of the input file
+ * @param student student_particulars contains a table of students' particulars
+ */
+void read_input(string inputfilename, student student_particulars[]) {
+	
+	// Create input file stream
+	ifstream inputfile;
+	// Open the input file
+	inputfile.open(inputfilename.c_str());
+	// Assertion to check if the input file exist
+	if(inputfile == NULL) {
+		cout << "Input file, with the filename " << inputfilename
+		<< ", does not exist!" << endl;
+	}
+	
+	
+	/**
+	 * Declare and instantiate some variables to temporaily store data
+	 * before processing them
+	 */
+	// Last name of the student
+	string lastname="";
+	// First name of the student
+	string firstname="";
+	// Student's social security number
+	string socialsecuritynumber="";
+	// Student's phone number in the united states
+	string phonenumber="";
+	// Student's age
+	int studentage=0;
+	
+	/**
+	 * Current index of the record of student paticulars
+	 * that is being enumerated
+	 */
+	int i=0;
+	// Start processing the data in the table
+	while((inputfile != NULL) && (i<MAXIMUM_NUMBER_OF_STUDENTS)) {
+		// Stop processing the input file once its end has been reached
+		if ( (inputfile >> student_particulars[i].last_name
+			>> student_particulars[i].first_name
+			>> student_particulars[i].social_security_number
+			>> student_particulars[i].phone_number
+			>> student_particulars[i].age) == NULL) {
+			break;
+		}
+		
+		// Check if names and cities of poll are valid
+		
+		
+		/**
+		 * If either name, city, or vote tally is invalid,
+		 * ignore this current line in the input file and
+		 * skip to the next
+		 */
+/*
+		if(name_index<0) {
+			cout << temp_name << " " << temp_city << " " << votes_tally
+				<< "\t\t NOT PROCESSED - Candidate not recognized" << endl;
+			continue;
+		}else if(cityIndex<0) {
+			cout << temp_name << " " << temp_city << " " << votes_tally
+				<< "\t\t NOT PROCESSED - City not recognized" << endl;
+			continue;
+		}else if(votes_tally<0) {
+			cout << temp_name << " " << temp_city << " " << votes_tally
+				<< "\t NOT PROCESSED - Vote total is illegal" << endl;
+			continue;
+		}
+*/
+		
+		/**
+		 * Student's first and last names, social security number, phone
+		 * number, and age are valid...
+		 * Enter these details into the appropriate place in the records
+		 */
+		;
+		i++;
+	}
+	
+	// Close the input filestream
+	inputfile.close();
+}
+
+
+/**
+ * Function to write output to a file
+ * #Print the particulars of each student in a line with the following format:
+ *	Last_name	First_name	Social_Security_Number	Telephone	Age
+ * @param outputfilename is the name of the output file
+ * @param student student_particulars contains a table of students' particulars
+ */
+void write_output(string outputfilename, student student_particulars[]) {
+	
+	// Create output file stream
+	ofstream outputfile;
+	/**
+	 * Convert outputfilename to string in C so that the file I/O function
+	 * in the C++ library can be utilised
+	 */
+	outputfile.open(outputfilename.c_str());
+	// Assertion to check if the output file was opened properly
+	if(outputfile == NULL) {
+		cout << "Output file, with the filename " << outputfilename
+		<< ", does not exist!" << endl;
+	}
+	
+	// Determine the total votes for all candidates across all cities...
+//	int total_tally[NUMBER_OF_CANDIDATES];
+//	for(int m=0; m<NUMBER_OF_CANDIDATES; m++) {
+//		total_tally[m]=0;
+//	}
+	
+	// Determine the index of the winning candidate...
+	// Index of the winning candidate's name in the name list
+	int winner_index=0;
+	
+	outputfile << "Report of Totals for Each Candidate and City:" << endl;
+	// Left align the data...
+	outputfile.setf(ios::left);
+	outputfile.width(14);
+	outputfile << "   ";
+	// Print the list of cities
+//	for(int i=0; i<NUMBER_OF_CITIES; i++) {
+//		outputfile.width(14);
+//		outputfile << cities[i];
+//	}
+	outputfile << endl;
+	
+	// Print the list of candidates and their vote tallies for each city
+//	for(int j=0; j<NUMBER_OF_CANDIDATES; j++) {
+		outputfile.width(14);
+//		outputfile << candidate_names[j];
+//		for(int k=0; k<NUMBER_OF_CITIES; k++) {
+//			outputfile.width(14);
+//			outputfile << number_of_votes_per_city_per_candidate[j][k];
+//			total_tally[j] = total_tally[j]
+//				+ number_of_votes_per_city_per_candidate[j][k];
+//		}
+		outputfile << endl;
+//		if(total_tally[j]>total_tally[winner_index]) {
+//			winner_index=j;
+//		}
+//	}
+	
+	outputfile << endl;
+	outputfile << "Total Votes for Candidate across all Cities:" << endl;
+//	for(int n=0; n<NUMBER_OF_CANDIDATES; n++) {
+		outputfile.width(14);
+//		outputfile << candidate_names[n];
+		outputfile.width(14);
+//		outputfile << total_tally[n] << endl;
+//	}
+	
+	outputfile << endl;
+//	outputfile << "Winner of the election is: "
+//		<< candidate_names[winner_index] << endl;
+	
+	// Close the output filestream
+	outputfile.close();
+}
+
+
+/**
+ * Function to convert all letters in the string s to uppercase
+ * @param s is the string to be converted to uppercase
+ */
+void uppercase (string & s) {
+	// For all characters in s
+	for (int i=0; i < s.size(); i++) {
+		// change it to uppercase
+		s[i] = toupper(s[i]);
+	}
+}
+

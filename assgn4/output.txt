@@ -1,0 +1,16 @@
+Report of Totals for Each Candidate and City:
+              Toledo        Bangor        Perris        Iona          Juhu          Malibu        Sierra        Taos          Pacoima       Napa          
+Bush          0             300           0             200           0             0             0             150           0             0             
+Kerry         300           300           0             0             0             0             0             0             0             0             
+Nader         0             0             0             0             0             0             0             0             0             0             
+Armstrong     200           0             0             500           0             0             0             0             0             0             
+Buchanan      0             0             0             0             0             0             0             0             0             0             
+
+Total Votes for Candidate across all Cities:
+Bush          650           
+Kerry         600           
+Nader         0             
+Armstrong     700           
+Buchanan      0             
+
+Winner of the election is: Armstrong

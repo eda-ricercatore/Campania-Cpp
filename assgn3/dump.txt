@@ -1,0 +1,192 @@
+Please enter input filename, and press the return key
+
+Please enter output filename, and press the return key
+
+	Processing the input file: bad.txt
+
+The Fibonacci of the number -12 is: 
+	The input number -12 is negative or zero
+	Fibonacci numbers do not exist for negative numbers or zero
+
+-1
+Factorial is: 0
+The Fibonacci of the number 0 is: 
+	The input number 0 is negative or zero
+	Fibonacci numbers do not exist for negative numbers or zero
+
+-1
+Factorial is: 0
+The Fibonacci of the number 1 is: 0
+Factorial is: 1
+The Fibonacci of the number 2 is: 1
+Factorial is: 2
+The Fibonacci of the number 3 is: 1
+Factorial is: 6
+The Fibonacci of the number 4 is: 2
+Factorial is: 24
+The Fibonacci of the number 5 is: 3
+Factorial is: 120
+The Fibonacci of the number 6 is: 5
+Factorial is: 720
+The Fibonacci of the number 7 is: 8
+Factorial is: 5040
+The Fibonacci of the number 8 is: 13
+Factorial is: 40320
+The Fibonacci of the number 9 is: 21
+Factorial is: 362880
+The Fibonacci of the number 10 is: 34
+Factorial is: 3.6288e+06
+The Fibonacci of the number 11 is: 55
+Factorial is: 3.99168e+07
+The Fibonacci of the number 12 is: 89
+Factorial is: 4.79002e+08
+The Fibonacci of the number 13 is: 144
+Factorial is: 6.22702e+09
+The Fibonacci of the number 14 is: 233
+Factorial is: 8.71783e+10
+The Fibonacci of the number 15 is: 377
+Factorial is: 1.30767e+12
+The Fibonacci of the number 16 is: 610
+Factorial is: 2.09228e+13
+The Fibonacci of the number 17 is: 987
+Factorial is: 3.55687e+14
+The Fibonacci of the number 18 is: 1597
+Factorial is: 6.40237e+15
+The Fibonacci of the number 19 is: 2584
+Factorial is: 1.21645e+17
+The Fibonacci of the number 20 is: 4181
+Factorial is: 2.4329e+18
+The Fibonacci of the number 21 is: 6765
+Factorial is: 5.10909e+19
+The Fibonacci of the number 22 is: 10946
+Factorial is: 1.124e+21
+The Fibonacci of the number 23 is: 17711
+Factorial is: 2.5852e+22
+The Fibonacci of the number 24 is: 28657
+Factorial is: 6.20448e+23
+The Fibonacci of the number 25 is: 46368
+Factorial is: 1.55112e+25
+The Fibonacci of the number 26 is: 75025
+Factorial is: 4.03291e+26
+The Fibonacci of the number 27 is: 121393
+Factorial is: 1.08889e+28
+The Fibonacci of the number 28 is: 196418
+Factorial is: 3.04888e+29
+The Fibonacci of the number 29 is: 317811
+Factorial is: 8.84176e+30
+The Fibonacci of the number 30 is: 514229
+Factorial is: 2.65253e+32
+The Fibonacci of the number 31 is: 832040
+Factorial is: 8.22284e+33
+The Fibonacci of the number 32 is: 1346269
+Factorial is: 2.63131e+35
+The Fibonacci of the number 33 is: 2178309
+Factorial is: 8.68332e+36
+The Fibonacci of the number 34 is: 3524578
+Factorial is: 2.95233e+38
+The Fibonacci of the number 35 is: 5702887
+Factorial is: 1.03331e+40
+The Fibonacci of the number 36 is: 9227465
+Factorial is: 3.71993e+41
+The Fibonacci of the number 37 is: 14930352
+Factorial is: 1.37638e+43
+The Fibonacci of the number 38 is: 24157817
+Factorial is: 5.23023e+44
+The Fibonacci of the number 39 is: 39088169
+Factorial is: 2.03979e+46
+The Fibonacci of the number 40 is: 63245986
+Factorial is: 8.15915e+47
+The Fibonacci of the number 41 is: 102334155
+Factorial is: 3.34525e+49
+The Fibonacci of the number 42 is: 165580141
+Factorial is: 1.40501e+51
+The Fibonacci of the number 43 is: 267914296
+Factorial is: 6.04153e+52
+The Fibonacci of the number 44 is: 433494437
+Factorial is: 2.65827e+54
+The Fibonacci of the number 45 is: 701408733
+Factorial is: 1.19622e+56
+The Fibonacci of the number 46 is: 1134903170
+Factorial is: 5.50262e+57
+The Fibonacci of the number 47 is: 1836311903
+Factorial is: 2.58623e+59
+The Fibonacci of the number 48 is: 
+	The Fibonacci of 48 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 1.24139e+61
+The Fibonacci of the number 49 is: 
+	The Fibonacci of 49 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 6.08282e+62
+The Fibonacci of the number 50 is: 
+	The Fibonacci of 50 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 3.04141e+64
+The Fibonacci of the number 51 is: 
+	The Fibonacci of 51 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 1.55112e+66
+The Fibonacci of the number 52 is: 
+	The Fibonacci of 52 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 8.06582e+67
+The Fibonacci of the number 53 is: 
+	The Fibonacci of 53 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 4.27488e+69
+The Fibonacci of the number 54 is: 
+	The Fibonacci of 54 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 2.30844e+71
+The Fibonacci of the number 58 is: 
+	The Fibonacci of 58 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 2.35056e+78
+The Fibonacci of the number 95 is: 
+	The Fibonacci of 95 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 1.033e+148
+The Fibonacci of the number 96 is: 
+	The Fibonacci of 96 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 9.91678e+149
+The Fibonacci of the number 97 is: 
+	The Fibonacci of 97 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 9.61928e+151
+The Fibonacci of the number 98 is: 
+	The Fibonacci of 98 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 9.42689e+153
+The Fibonacci of the number 99 is: 
+	The Fibonacci of 99 is greater than the range of values held in the integer data type
+	Hence, a data overflow will result
+
+2147483647
+Factorial is: 9.33262e+155
+
+	All input is processed

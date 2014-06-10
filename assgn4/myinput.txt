@@ -1,0 +1,15 @@
+Toledo Bangor Perris Iona Juhu Malibu Sierra Taos Pacoima Napa
+Bush Kerry Nader Armstrong Buchanan
+Bush Bangor 200
+Kerry Bangor 300
+Kerry Toledo 100
+Armstrong Toledo 100
+Armstrong Toledo 100
+Bush Taos 150
+Bush Bangor 100
+Kerry Toledo 200
+Kerry Perris -90
+Kery Iona 100
+Bush Iona 200
+Bush Paris 250
+Armstrong Iona 500

@@ -1,0 +1,5 @@
+When mystery is applied to 3 and 7: results are 3628800, 10
+When mystery is applied to 4 and 6: results are 3628800, 10
+When mystery is applied to 5 and 7: results are 479001600, 12
+When mystery is applied to 34 and 5: results are 39, 2.03979e+46
+When mystery is applied to 8 and 8: results are 16, 2.09228e+13
