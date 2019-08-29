@@ -1,7 +1,5 @@
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 4, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong.
  *
  * @acknowledgement - code samples/examples from the web page
  *	<http://www-scf.usc.edu/~csci455/>; they are written by

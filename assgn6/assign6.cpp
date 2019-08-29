@@ -1,7 +1,5 @@
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 6, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong.
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
