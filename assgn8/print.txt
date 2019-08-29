@@ -36,9 +36,7 @@ class Graduate : public Student
 };
 #endif
 /*
- * Zhiyang Ong, student number 6004-9194-12
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -144,9 +142,7 @@ class Student {
 };
 #endif
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -552,9 +548,7 @@ void Graduate::write_to_stream (ofstream & outputfile) {
 	//outputfile << endl;
 }
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -973,9 +967,7 @@ void Student::write_to_stream(ofstream & outputfile) {
 	outputfile << endl;
 }
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -2147,9 +2139,7 @@ void Undergraduate::write_to_stream (ofstream & outputfile) {
 	//outputfile << endl;
 }
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone

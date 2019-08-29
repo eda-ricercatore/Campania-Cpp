@@ -1,7 +1,5 @@
 /*
- * Zhiyang Ong, student number 6004-9194-12
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -107,9 +105,7 @@ class Student {
 		int student_age;
 };
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -222,9 +218,7 @@ public:
 	void print_header();
 };
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -301,9 +295,7 @@ class StudentDB {
 	void print_header();
 };
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -641,9 +633,7 @@ void Student::write_to_stream(ofstream & outputfile) {
 	outputfile << endl;
 }
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
@@ -1435,9 +1425,7 @@ int StudentDB::get_index_of_last_element() {
 	return index_of_last_element;
 }
 /**
- * Zhiyang Ong, student number 6004-9194-12,
- * Assignment 7, Introduction to Programming Systems Design
- * CSCI 455, Fall 2005
+ * Zhiyang Ong
  *
  * Assume that phone numbers can be duplicated since students can be siblings,
  * relatives, or friends living in the same house, where the same line phone
